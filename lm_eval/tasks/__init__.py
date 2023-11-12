@@ -67,6 +67,9 @@ from . import ceval
 from . import csatqa
 from . import haerae
 from . import cmmlu
+from . import go_emotions
+from . import emotion
+from . import sem_eval_2018_task_1
 
 ########################################
 # Translation tasks
@@ -335,6 +338,9 @@ TASK_REGISTRY = {
     "haerae_rc": haerae.RC,
     "haerae_rw": haerae.RW,
     "haerae_sn": haerae.SN,
+    "go_emotions": go_emotions.GoEmotions,
+    "emotion": emotion.Emotion,
+    "sem_eval_2018_task_1": sem_eval_2018_task_1.SemEval2018Task1,
     # Requires manual download
     # Requires manual download of data.
     # "storycloze_2016": storycloze.StoryCloze2016,
