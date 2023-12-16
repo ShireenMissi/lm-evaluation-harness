@@ -3,6 +3,8 @@ import json
 import logging
 import os
 
+os.environ['CURL_CA_BUNDLE'] = ''
+
 from lm_eval import tasks, evaluator, utils
 
 logging.getLogger("openai").setLevel(logging.WARNING)
